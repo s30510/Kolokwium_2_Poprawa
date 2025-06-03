@@ -1,0 +1,44 @@
+Installing libraries: 
+
+// For the core EF functionality
+Microsoft.EntityFrameworkCore
+
+// For your database provider (e.g., SQL Server)
+Microsoft.EntityFrameworkCore.SqlServer
+
+// For migrations and tooling
+Microsoft.EntityFrameworkCore.Tools
+
+
+
+Main missing methods: 
+
+builder.Services.AddControllers();
+builder.Services.AddDbContext<DatabaseContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+builder.Services.AddScoped<IDbService, DbService>();
+
+...
+
+app.MapControllers();
+
+
+Adding migrations: 
+
+//dotnet ef migrations add (nazwa tego co robimy)
+//dotnet ef database update
+
+UWAGI: wyłączyć program podczas migracji, ale skomplilować go przed
+
+
+
+For models: 
+[Key]
+[Required] 
+ 
+
+
+
+
+
+

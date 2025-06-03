@@ -25,6 +25,9 @@ public class DatabaseContext : DbContext
 
         modelBuilder.Entity<Example>().HasData(new List<Example>
         {
+            new Example {Id = 1, Name = "VisualStudio"},
+            new Example {Id = 2, Name = "Apple"},
+            new Example {Id = 3, Name = "Bolo"},
         });
     }
 }
