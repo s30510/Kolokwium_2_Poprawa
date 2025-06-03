@@ -35,7 +35,7 @@ UWAGI: wyłączyć program podczas migracji, ale skomplilować go przed
 For models: 
 [Key]
 [Required] 
- 
+ [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
 
 
 
