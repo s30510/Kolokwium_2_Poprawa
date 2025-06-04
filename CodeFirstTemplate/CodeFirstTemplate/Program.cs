@@ -1,6 +1,6 @@
-using CodeFirstTemplate.Data;
-using CodeFirstTemplate.Services;
 using Microsoft.EntityFrameworkCore;
+using WebApplication1.Data;
+using WebApplication1.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

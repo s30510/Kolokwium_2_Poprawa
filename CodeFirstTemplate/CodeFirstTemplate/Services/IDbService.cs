@@ -1,8 +1,10 @@
-﻿using CodeFirstTemplate.DTOs;
+﻿using WebApplication1.DTOs;
 
-namespace CodeFirstTemplate.Services;
+namespace WebApplication1.Services;
 
 public interface IDbService
 {
-    public Task<ExampleDto> GetExampleAsync();
+    Task<GetClientInfoDto> GetClientInfoAsync(int id);
+    
+    Task AddNewCustomerAsync(AddCustomerDto newCustomer);
 }
