@@ -36,6 +36,7 @@ For models:
 [Key]
 [Required] 
  [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
+[Table("Pastry")]
 
 
 
