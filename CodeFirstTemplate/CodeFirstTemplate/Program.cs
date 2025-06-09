@@ -31,3 +31,10 @@ app.Run();
 
 //dotnet ef migrations add (nazwa tego co robimy)
 //dotnet ef database update
+
+//dotnet ef migrations add (nazwa tego co robimy)
+//dotnet ef database update
+//dotnet tool install --global dotnet-ef --version 8.*
+
+//dotnet new tool-manifest
+//dotnet tool install dotnet-ef
