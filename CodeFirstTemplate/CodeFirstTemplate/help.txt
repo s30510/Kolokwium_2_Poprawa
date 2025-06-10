@@ -39,6 +39,22 @@ For models:
 [Table("Pastry")]
 
 
+ using var transaction = await _dbContext.Database.BeginTransactionAsync();
+
+        try
+        {
+
+            ...
+            await _context.SaveChangesAsync();
+            await transaction.CommitAsync();
+        }
+        catch (Exception ex)
+        {
+            await transaction.RollbackAsync();
+            throw;
+        }
+
+
 
 
 
